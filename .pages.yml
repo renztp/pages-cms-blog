@@ -1,8 +1,4 @@
 media:
-  - name: test
-    label: Test Media
-    input: src/media/test-images
-    output: test-images
   - name: imageSets
     label: Image Sets
     input: src/media/image-sets
@@ -16,4 +12,4 @@ content:
     fields:
       - { name: title, label: Set Title, type: string }
       - { name: date, label: Date, type: date }
-      - { name: photos, label: Photos, type: list, field: { type: image } }
+      - { name: photos, label: Photos, type: image, list: true }
