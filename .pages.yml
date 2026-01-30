@@ -8,7 +8,7 @@ content:
     label: Photo Sets
     type: collection
     path: src/content/sets
-    filename: "{slug}/index.md"
+    filename: "{year}-{month}-{day}-photoset.md"
     fields:
       - { name: title, label: Set Title, type: string }
       - { name: date, label: Date, type: date }
