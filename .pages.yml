@@ -1,3 +1,12 @@
+media:
+  - name: test
+    label: Test Media
+    input: src/media/test-images
+    output: test-images
+  - name: imageSets
+    label: Image Sets
+    input: src/media/image-sets
+    output: image-sets
 content:
   - name: sets
     label: Photo Sets
