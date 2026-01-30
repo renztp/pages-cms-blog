@@ -13,3 +13,19 @@ content:
       - { name: title, label: Set Title, type: string }
       - { name: date, label: Date, type: date }
       - { name: photos, label: Photos, type: image, list: true }
+  - name: blog
+    label: Blog
+    type: collection
+    path: src/content/blog
+    fields:
+      - name: title
+        label: Set Title
+        type: string
+      - name: datePublished,
+        label: Date Published
+        type: date
+      - name: content
+        label: Content
+        type: rich-text
+        options:
+          media: imageSets
