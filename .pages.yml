@@ -1,0 +1,10 @@
+content:
+  - name: sets
+    label: Photo Sets
+    type: collection
+    path: src/content/sets
+    filename: "{slug}/index.md"
+    fields:
+      - { name: title, label: Set Title, type: string }
+      - { name: date, label: Date, type: date }
+      - { name: photos, label: Photos, type: list, field: { type: image } }
