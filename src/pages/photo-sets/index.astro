@@ -1,0 +1,19 @@
+---
+import { getCollection } from "astro:content";
+
+const photoSetsPosts = await getCollection("photoSets");
+const sortedPosts = photoSetsPosts.sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
+---
+
+<h1>Photo Sets</h1>
+<ul>
+  {
+    sortedPosts.map((post) => (
+      <li>
+        <a href={`/photo-sets/${post.slug}`}>{post.data.title}</a>
+      </li>
+    ))
+  }
+</ul>
