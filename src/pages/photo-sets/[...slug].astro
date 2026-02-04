@@ -17,7 +17,7 @@ const { Content } = await render(post);
 <div class="gallery">
   {
     post.data.photos.map((photo) => (
-      <img src={`./src/media/${photo}`} style="width: 300px;" />
+      <img src={`/${photo}`} style="width: 600px;" />
     ))
   }
 </div>
