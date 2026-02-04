@@ -33,7 +33,7 @@ content:
       - name: title
         label: Set Title
         type: string
-      - name: datePublished,
+      - name: datePublished
         label: Date Published
         type: date
       - name: content
