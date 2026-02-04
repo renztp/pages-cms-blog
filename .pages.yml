@@ -3,6 +3,10 @@ media:
     label: Image Sets
     input: public/image-sets
     output: image-sets
+  - name: allPhotos
+    label: All Photos
+    input: public/all-photos
+    output: all-photos
 content:
   - name: sets
     label: Photo Sets
@@ -24,6 +28,7 @@ content:
     label: Blog
     type: collection
     path: src/content/blog
+    filename: "{primary}.md"
     fields:
       - name: title
         label: Set Title
@@ -36,3 +41,14 @@ content:
         type: rich-text
         options:
           media: imageSets
+  - name: about
+    label: About
+    type: file
+    path: src/content/about
+    filename: "about.md"
+    fields:
+      - name: content
+        label: Content
+        type: rich-text
+        options:
+          media: allPHotos
