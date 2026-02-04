@@ -8,7 +8,7 @@ content:
     label: Photo Sets
     type: collection
     path: src/content/sets
-    filename: "{title}.md"
+    filename: "{title}-{primary}-{hour}.md"
     fields:
       - name: title
         label: Set Title
