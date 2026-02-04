@@ -12,7 +12,7 @@ const sortedPosts = photoSetsPosts.sort(
   {
     sortedPosts.map((post) => (
       <li>
-        <a href={`/photo-sets/${post.slug}`}>{post.data.title}</a>
+        <a href={`/photo-sets/${post.id}`}>{post.data.title}</a>
       </li>
     ))
   }

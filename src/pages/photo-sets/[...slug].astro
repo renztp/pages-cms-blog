@@ -1,0 +1,24 @@
+---
+import { getCollection, render } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("photoSets");
+  return posts.map((post) => ({
+    params: {
+      slug: post.id,
+    },
+    props: post,
+  }));
+}
+const post = Astro.props;
+const { Content } = await render(post);
+---
+
+<div class="gallery">
+  {
+    post.data.photos.map((photo) => (
+      <img src={`./src/media/${photo}`} style="width: 300px;" />
+    ))
+  }
+</div>
+<Content />
