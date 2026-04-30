@@ -11,4 +11,13 @@ const photoSets = defineCollection({
   })
 });
 
-export const collections = { photoSets };
+const blogPosts = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/blog' }),
+  schema: z.object({
+    title: z.string(),
+    datePublished: z.date(),
+    content: z.string()
+  })
+});
+
+export const collections = { photoSets, blogPosts };
