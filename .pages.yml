@@ -41,6 +41,7 @@ content:
         type: rich-text
         options:
           media: imageSets
+          path: public/image-sets
   - name: about
     label: About
     type: file
