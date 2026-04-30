@@ -11,7 +11,13 @@ export async function getStaticPaths() {
   }));
 }
 const post = Astro.props;
+console.log(post);
 const { Content } = await render(post);
 ---
 
-<Content />
+<div>
+  <h1>{post.data.title}</h1>
+  <p>{post.data.datePublished.toLocaleDateString()}</p>
+
+  <Content />
+</div>
