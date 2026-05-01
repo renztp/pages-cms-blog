@@ -42,7 +42,7 @@ content:
         type: rich-text
         media:
           input: src/content/blog/image-sets
-          output: ./image-sets
+          output: ./watdahek/nani/image-sets
         # options:
           # media: imageSets
           # path: public/image-sets
