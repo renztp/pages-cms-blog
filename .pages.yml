@@ -29,7 +29,6 @@ content:
     type: collection
     path: src/content/blog
     filename: "{primary}.md"
-    format: md
     fields:
       - name: title
         label: Set Title
@@ -37,15 +36,12 @@ content:
       - name: datePublished
         label: Date Published
         type: date
-      - name: body
-        label: Post Content
+      - name: content
+        label: Content
         type: rich-text
-        media:
-          input: src/content/blog/image-sets
-          output: ./watdahek/nani/image-sets
-        # options:
-          # media: imageSets
-          # path: public/image-sets
+        options:
+          media: imageSets
+          path: public/image-sets
   - name: about
     label: About
     type: file
